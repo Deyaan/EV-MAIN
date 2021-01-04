@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="https://deyaan.github.io/EV-HOME/">
+                    <img src="./img/logo.png" height="55" width="130" alt="">
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="https://deyaan.github.io/EV-HOME/" class="active">Home</a>
+                    <a href="file:///C:/Users/Admin/Desktop/E-V%20Station%20-%20Copy/About/index.html">About</a>
+                    <a href="file:///C:/Users/Admin/Desktop/E-V%20Station%20-%20Copy/map[to-from]/index.html">Map</a>
+                    <a href="file:///C:/Users/Admin/Desktop/E-V%20Station%20-%20Copy/Home/index.html">Logout</a>
+                </div>
+                <div class="search">
+                    <div>
+                        <img src="./img/search.png" alt="">
+                        <input type="text" id="input" placeholder="Search" onkeyup="search()">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <table>
+            <ul id="list">
+               <li>
+                   <a ></a>
+               </li>
+            </ul>
+        </table>
+
+        </section>
+    </header>
+    
+<!--database--->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAWinTxSrHnsduUx5HZcvI6f3OBHsVWJMU",
+    authDomain: "e-v-station-app-863b4.firebaseapp.com",
+    databaseURL: "https://e-v-station-app-863b4-default-rtdb.firebaseio.com",
+    projectId: "e-v-station-app-863b4",
+    storageBucket: "e-v-station-app-863b4.appspot.com",
+    messagingSenderId: "349543281909",
+    appId: "1:349543281909:web:a9f745461dd54c221dc1bc"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<!--database over..-->
+<script src="./js/app.js"></script>
+</body>
+
+</html>
